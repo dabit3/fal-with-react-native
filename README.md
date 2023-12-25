@@ -1,6 +1,9 @@
 ## Real-time Mobile canvas with Skia, React Native, and Fal.ai
 
-![Real-time Mobile canvas with Fal.ai](falrt.gif | width=100)
+<img
+  src="falrt.gif"
+  width="100"
+/>
 
 ### Getting started
 

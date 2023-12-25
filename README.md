@@ -11,7 +11,7 @@
 
 2. Get an API key from [Fal.ai](https://fal.ai)
 
-3. Create `credentials.ts` file with `FAL_CREDENTIALS` as API key
+3. Create `credentials.ts` file with `FAL_CREDENTIALS` as API key (for production, ship a proxy server instead of using credentials from the client)
 
 4. Start the server
 

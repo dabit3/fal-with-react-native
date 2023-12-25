@@ -2,7 +2,7 @@
 
 <img
   src="falrt.gif"
-  width="100"
+  width="300"
 />
 
 ### Getting started

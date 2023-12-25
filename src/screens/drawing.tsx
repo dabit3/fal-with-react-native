@@ -1,4 +1,6 @@
-import * as fal from '@fal-ai/serverless-client';
+
+import * as fal from '@fal-ai/serverless-client'
+import { FAL_CREDENTIALS } from '../../credentials';
 import {
   Canvas,
   useCanvasRef,
@@ -13,6 +15,10 @@ import { useState, useEffect } from 'react';
 import { GestureResponderEvent } from 'react-native';
 import { useSharedValue } from 'react-native-reanimated';
 import { Text, View } from '~/components/core';
+
+fal.config({
+  credentials: FAL_CREDENTIALS
+})
 
 const APP_ID = '110602490-lcm-sd15-i2i';
 const DEFAULT_PROMPT = 'A moon in a starry night sky';
@@ -94,7 +100,7 @@ export function DrawingScreen() {
       sync_mode: true,
       seed: 6252023,
     });
-  };
+  }
 
   useEffect(() => {
     const canvas = canvasRef.current;

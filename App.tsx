@@ -7,6 +7,7 @@ import React from 'react';
 import { appTheme } from '~/components/theme';
 import { DrawingScreen } from '~/screens/drawing';
 import { HomeScreen } from '~/screens/home';
+import { DrawingCanvas } from '~/screens/skia';
 
 const Drawer = createDrawerNavigator();
 
@@ -47,7 +48,8 @@ function Navigation() {
           drawerActiveTintColor: theme['color-primary-500'],
         }}>
         <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Drawing" component={DrawingScreen} />
+        {/* <Drawer.Screen name="Drawing" component={DrawingScreen} /> */}
+        <Drawer.Screen name="Draw" component={DrawingCanvas} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
